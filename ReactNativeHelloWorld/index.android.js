@@ -36,6 +36,8 @@ import ComponentHelloWorld from './react_native/component_hello_world';
 import MineExample from './react_native/hello_world_index';
 import MineListViewHelloWorld from './hello_world/ListViewHelloWorld';
 import MineScrollViewHelloWorld from './hello_world/ScrollViewHelloWorld';
+import Test from './hello_world/test';
+import TabViewHelloWorld from './hello_world/TabViewHelloWorld';
 
 
 
@@ -76,7 +78,9 @@ class Root extends Component{
                 {title: "Alert Example",content: AlertExample},
                 {title: "AnExAppExample",content: AnExAppExample},
                 {title: "ListView Hello World",content: MineListViewHelloWorld},
-                {title: "MineScrollViewHelloWorld",content: "MineScrollViewHelloWorld"}];
+                {title: "MineScrollViewHelloWorld",content: MineScrollViewHelloWorld},
+                {title: "Test",content: Test},
+                {title: "TabViewHelloWorld",content: TabViewHelloWorld}];
 
     this.state={
       dataSource: ds.cloneWithRows(datas)

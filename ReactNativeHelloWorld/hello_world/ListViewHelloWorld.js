@@ -7,6 +7,10 @@ export default class ListViewHelloWorld extends Component{
   datas
     constructor(){
       super();
+    }
+
+
+    componentWillMount() {
       ds = new ListView.DataSource({rowHasChanged: (r1,r2) => r1!==r2,
                                         sectionHeaderHasChanged: (s1,s2) => s1!==s2,
                                         getSectionData: this.getSectionData,
@@ -154,7 +158,6 @@ export default class ListViewHelloWorld extends Component{
       }
     }
 
-
         updateData = (datas) => {
           this.state={
             dataSource: ds.cloneWithRowsAndSections(datas,this.getSctionIDs(datas),this.getRowIDs(datas))
@@ -214,9 +217,7 @@ export default class ListViewHelloWorld extends Component{
         // console.log("sectionData:"+sectionData[0]+",sectionId:"+sectionId+",data:"+sectionData);
         return (
           <View style={{height: 60,backgroundColor: '#F0F0F0'}}>
-            <TouchableOpacity onPress={()=>this._toggleSection(sectionId)}>
-              <Text style={{fontSize: 45,color: '#282C34'}}>{sectionData.s}</Text>
-            </TouchableOpacity>
+              <Text style={{fontSize: 45,color: '#282C34'}} onPress={()=>this._toggleSection(sectionId)}>{sectionData.s}</Text>
           </View>
         );
       }
@@ -247,14 +248,12 @@ export default class ListViewHelloWorld extends Component{
           }
 
 
-
-
       _renderRow = (rowData,sectionId,rowId) => {
         return(
           <View >
-          <TouchableOpacity onPress={()=>this._toastRow(rowData,sectionId,rowId)}>
+
             <Text style={{flex :1,fontSize: 35,flexDirection: 'row',color: '#226699'}}>{rowData.r}</Text>
-          </TouchableOpacity>
+
           </View>
         )
       }

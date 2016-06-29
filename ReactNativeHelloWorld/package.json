@@ -9,6 +9,7 @@
     "react": "^15.1.0",
     "react-native": "0.27.2",
     "react-native-swiper": "^1.4.5",
-    "react-timer-mixin": "^0.13.3"
+    "react-timer-mixin": "^0.13.3",
+    "react-tween-state": "^0.1.5"
   }
 }
