@@ -14,6 +14,7 @@ import {
   ListView
 } from 'react-native';
 
+
 import HelloWorld from './react_native/hello_world_index';
 import Test1 from './react_native/test1';
 import AnimationHelloWorld from './react_native/animation_hello_world';
@@ -28,6 +29,7 @@ import ScrollViewExample from './react_native/ScrollViewExample';
 import ViewPagerExample from './react_native/ViewPagerAndroidExample';
 import AnExAppExample from './react_native/AnExApp';
 import AnExBobble from './react_native/AnExBobble';
+import ScrollTabBar from './hello_world/ScrollTabBar';
 // import ToolBarAndroidExample from './react_native/ToolbarAndroidExample';
 
 //mine code
@@ -38,6 +40,8 @@ import MineListViewHelloWorld from './hello_world/ListViewHelloWorld';
 import MineScrollViewHelloWorld from './hello_world/ScrollViewHelloWorld';
 import Test from './hello_world/test';
 import TabViewHelloWorld from './hello_world/TabViewHelloWorld';
+import TabBarTest from './hello_world/TabBarTestHelloWorld';
+
 
 
 
@@ -80,7 +84,9 @@ class Root extends Component{
                 {title: "ListView Hello World",content: MineListViewHelloWorld},
                 {title: "MineScrollViewHelloWorld",content: MineScrollViewHelloWorld},
                 {title: "Test",content: Test},
-                {title: "TabViewHelloWorld",content: TabViewHelloWorld}];
+                {title: "TabViewHelloWorld",content: TabViewHelloWorld},
+                {title: "ScrollTabBar",content: ScrollTabBar},
+                {title: "TabBarTest",content: TabBarTest}];
 
     this.state={
       dataSource: ds.cloneWithRows(datas)
