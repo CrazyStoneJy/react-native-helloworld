@@ -41,6 +41,9 @@ import MineScrollViewHelloWorld from './hello_world/ScrollViewHelloWorld';
 import Test from './hello_world/test';
 import TabViewHelloWorld from './hello_world/TabViewHelloWorld';
 import TabBarTest from './hello_world/TabBarTestHelloWorld';
+import NetWorkHelloWorld from './hello_world/NetWorkHelloWorld';
+import JSONHelloWorld from './hello_world/JSONHelloWorld';
+import NetUtilHelloWorld from './hello_world/NetUtilHelloWorld';
 
 
 
@@ -86,7 +89,10 @@ class Root extends Component{
                 {title: "Test",content: Test},
                 {title: "TabViewHelloWorld",content: TabViewHelloWorld},
                 {title: "ScrollTabBar",content: ScrollTabBar},
-                {title: "TabBarTest",content: TabBarTest}];
+                {title: "TabBarTest",content: TabBarTest},
+                {title: "NetWorkHelloWorld",content: NetWorkHelloWorld},
+                {title: "JSONHelloWorld",content: JSONHelloWorld},
+                {title: "NetUtilHelloWorld",content: NetUtilHelloWorld}];
 
     this.state={
       dataSource: ds.cloneWithRows(datas)

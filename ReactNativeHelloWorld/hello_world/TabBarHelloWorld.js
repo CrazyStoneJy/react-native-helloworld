@@ -18,27 +18,28 @@ export default class TabBarHelloWorld extends Component{
         index: 0,
       }
 
-      // constructor(){
-      //   this.state={
-      //     index: this.props.index;
-      //   }
-      // }
+      constructor(){
+        super();
+        this.state={
+          tabIndex: this.props.index
+        }
+      }
 
 
-    // _changeTab(selectedIndex) => {
-    //
-    //     this.setState={
-    //       index: selectedIndex;
-    //     }
-    //
-    // }
+    _changeTab  = (selectedIndex) => {
+
+        this.setState={
+          tabIndex: selectedIndex
+        }
+
+    }
 
 
 
 
     _getItemView  = (data,i) => {
 
-        const isSelected = i === this.props.index;
+        const isSelected = i === this.state.tabIndex;
         const textColor = isSelected ? this.props.selectedColor : this.props.unselectColor;
         const textWeight = isSelected ? 'bold' : 'normal';
 

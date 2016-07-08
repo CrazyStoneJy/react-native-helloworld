@@ -26,9 +26,8 @@ class TabView extends Component{
 
 
 propsType: {
-  title: propsType.string, 
+  title: propsType.string,
 }
-
 
 
       render(){
