@@ -203,7 +203,7 @@ export default class ListViewHelloWorld extends Component{
         // renderScrollComponent={props => <RecyclerViewBackedScrollView {...props} />}
         <View style={{flex:1, backgroundColor: 'white'}}>
           <ListView style={{flex:1}}
-          enableEmptySections={true}
+            enableEmptySections={true}
            dataSource={this.state.dataSource}
           renderRow={this._renderRow}
           renderSectionHeader={this._renderSection}

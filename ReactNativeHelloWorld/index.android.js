@@ -44,12 +44,10 @@ import TabBarTest from './hello_world/TabBarTestHelloWorld';
 import NetWorkHelloWorld from './hello_world/NetWorkHelloWorld';
 import JSONHelloWorld from './hello_world/JSONHelloWorld';
 import NetUtilHelloWorld from './hello_world/NetUtilHelloWorld';
-
-
+import CountDownHelloWorld from './hello_world/CountDownHelloWorld';
 
 
 class ReactNativeHelloWorld extends Component {
-
 
         renderScene = (route,navigator) => {
                 var Component = route.component;
@@ -92,7 +90,8 @@ class Root extends Component{
                 {title: "TabBarTest",content: TabBarTest},
                 {title: "NetWorkHelloWorld",content: NetWorkHelloWorld},
                 {title: "JSONHelloWorld",content: JSONHelloWorld},
-                {title: "NetUtilHelloWorld",content: NetUtilHelloWorld}];
+                {title: "NetUtilHelloWorld",content: NetUtilHelloWorld},
+                {title: "CountDownHelloWorld",content: CountDownHelloWorld}];
 
     this.state={
       dataSource: ds.cloneWithRows(datas)
