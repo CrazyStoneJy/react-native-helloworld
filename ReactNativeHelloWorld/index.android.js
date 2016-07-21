@@ -45,6 +45,8 @@ import NetWorkHelloWorld from './hello_world/NetWorkHelloWorld';
 import JSONHelloWorld from './hello_world/JSONHelloWorld';
 import NetUtilHelloWorld from './hello_world/NetUtilHelloWorld';
 import CountDownHelloWorld from './hello_world/CountDownHelloWorld';
+import RealmHelloWorld from './hello_world/RealmHelloWorld';
+import RefreshListView from './hello_world/RefreshListView';
 
 
 class ReactNativeHelloWorld extends Component {
@@ -91,7 +93,9 @@ class Root extends Component{
                 {title: "NetWorkHelloWorld",content: NetWorkHelloWorld},
                 {title: "JSONHelloWorld",content: JSONHelloWorld},
                 {title: "NetUtilHelloWorld",content: NetUtilHelloWorld},
-                {title: "CountDownHelloWorld",content: CountDownHelloWorld}];
+                {title: "CountDownHelloWorld",content: CountDownHelloWorld},
+                {title: "RealmHelloWorld",content: RealmHelloWorld},
+                {title: "RefreshListView",content: RefreshListView}];
 
     this.state={
       dataSource: ds.cloneWithRows(datas)

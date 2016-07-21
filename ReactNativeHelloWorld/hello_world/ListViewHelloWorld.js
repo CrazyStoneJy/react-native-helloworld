@@ -16,7 +16,6 @@ export default class ListViewHelloWorld extends Component{
                                         getSectionData: this.getSectionData,
                                         getRowData: this.getRowData});
 
-
                                         datas =[
                                           {
                                             s:"s1",
@@ -166,9 +165,9 @@ export default class ListViewHelloWorld extends Component{
 
 
 
-    getSctionIDs = (data) => {
+    getSctionIDs = (datas) => {
       var sectionIDs = [];
-      for (var i = 0; i < data.length; i++) {
+      for (var i = 0; i < datas.length; i++) {
         sectionIDs.push(i);
       }
       return sectionIDs;
@@ -204,10 +203,10 @@ export default class ListViewHelloWorld extends Component{
         <View style={{flex:1, backgroundColor: 'white'}}>
           <ListView style={{flex:1}}
             enableEmptySections={true}
-           dataSource={this.state.dataSource}
-          renderRow={this._renderRow}
-          renderSectionHeader={this._renderSection}
-          renderFooter={this._renderFooter}/>
+            dataSource={this.state.dataSource}
+            renderRow={this._renderRow}
+            renderSectionHeader={this._renderSection}
+            renderFooter={this._renderFooter}/>
         </View>
       );
     }

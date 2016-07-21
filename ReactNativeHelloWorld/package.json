@@ -11,6 +11,7 @@
     "react-native-scrollable-tab-view": "^0.5.2",
     "react-native-swiper": "^1.4.5",
     "react-timer-mixin": "^0.13.3",
-    "react-tween-state": "^0.1.5"
+    "react-tween-state": "^0.1.5",
+    "realm": "^0.14.1"
   }
 }
